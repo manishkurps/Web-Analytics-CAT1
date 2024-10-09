@@ -312,10 +312,10 @@
 </head>
 <body>
     <div>This is where the purchase form would go</div>
-    <button id="purchases">Purchases</button>
+    <button id="purchase">Purchase</button>
     <script>
-    document.getElementById("purchases").addEventListener("click", function () {
-        gtag("event", "purchases", {
+    document.getElementById("purchase").addEventListener("click", function () {
+        gtag("event", "purchase", {
                 // This purchase event uses a different transaction ID
                 // from the previous purchase event so Analytics
                 // doesn't deduplicate the events.
@@ -372,11 +372,11 @@
     </script>
 </head>
 <body>
-    <div>This is where the purchase form would go</div>
-    <button id="purchases">Purchases</button>
+    <div>Click Purchase Button for custom event</div>
+    <button id="purchase">Purchase</button>
     <script>
-    document.getElementById("purchases").addEventListener("click", function () {
-        gtag("event", "purchases", {
+    document.getElementById("purchase").addEventListener("click", function () {
+        gtag("event", "purchase", {
                 // This purchase event uses a different transaction ID
                 // from the previous purchase event so Analytics
                 // doesn't deduplicate the events.
@@ -413,3 +413,4 @@
     </script>
 </body>
 </html>
+
