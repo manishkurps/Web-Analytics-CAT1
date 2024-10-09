@@ -439,10 +439,10 @@
     <div>Click View item Button for custom event</div>
     <button id="view_item">view_item</button>
 
-    <div>Click View item Button for custom event</div>
+    <div>Click add to cart Button for custom event</div>
     <button id="add_to_cart">add_to_cart</button>
 
-    <div>Click View item Button for custom event</div>
+    <div>Click checkout Button for custom event</div>
     <button id="checkout">checkout</button>
     
     <script>
@@ -536,7 +536,7 @@
     });
 
      document.getElementById("checkout").addEventListener("click", function () {
-        gtag("event", "begin_checkout", {
+        gtag("event", "checkout", {
               currency: "USD",
               value: 30.03,
               coupon: "SUMMER_FUN",
