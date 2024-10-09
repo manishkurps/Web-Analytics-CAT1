@@ -468,9 +468,12 @@
               ]
             });
 
+    });
+
+     document.getElementById("view_item").addEventListener("click", function () {
         gtag("event", "view_item", {
-              currency: "USD",
-              value: 30.03,
+              item_list_id: "related_products",
+              item_list_name: "Related products",
               items: [
                 {
                   item_id: "SKU_12345",
